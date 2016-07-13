@@ -14,7 +14,10 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abendigo.github.io" # the base hostname & protocol for your site
 twitter_username: abendigo
-github_username:  abendigo
+github_username: abendigo
 
 # Build settings
 markdown: kramdown
+
+# Google sevices
+google_analytics: UA-80717907-1
