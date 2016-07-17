@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Sauce Labs and Cucumber
-categories: cucumber selenium saucelabs
 ---
 
 We recently started a new project using [Web Components][web-components] and [Polymer][polymer].

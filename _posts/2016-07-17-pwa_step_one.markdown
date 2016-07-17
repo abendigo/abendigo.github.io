@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Progressive Web App - Step One
-categories: pwa serviceworker
 ---
 One of my long-term plans for this blog is to turn it into a [Progressive Web App][pwa], and
 I hope to document the journey as I go.
