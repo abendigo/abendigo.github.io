@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Sauce Labs and Cucumber
+categories: cucumber selenium saucelabs
 ---
 
 We recently started a new project using [Web Components][web-components] and [Polymer][polymer].
 We want to add some behaviour driven tests, using [Cucumber][cucumber] and [Selenium][selenium]
-but do not want to continue using our in-house grid of Selenium nodes. It has proven too time 
+but do not want to continue using our in-house grid of Selenium nodes. It has proven too time
 consuming and frustrating to set up and maintain them.
 
 The goal is to have our CI system ([GoCD][gocd]) checkout and build pull requests (managed via
@@ -16,7 +17,7 @@ After a little searching, I found two main players offering hosted selenium serv
 [BrowserStack][browserstack] and [Sauce Labs][saucelabs]. Since [WCT][wct] has built in
 support for Sauce Labs, I decided to give it a try first.
 
-We are using [Gulp][gulp] as a task runner, so I looked for gulp plugins that could help. 
+We are using [Gulp][gulp] as a task runner, so I looked for gulp plugins that could help.
 I quickly found [gulp-cucumber][gulp-cucumber]. Unfortunately, our app needs to access some
 internal API's, so I needed to make use of Sauce Labs sauce-connect local tunnel service.
 I could not find a gulp plugin for this, but, I did find this [little gist][gist].
