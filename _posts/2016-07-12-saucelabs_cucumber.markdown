@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sauce Labs and Cucumber
+comments: true
 ---
 
 We recently started a new project using [Web Components][web-components] and [Polymer][polymer].
