@@ -8,19 +8,18 @@ I already had [Homebrew][homebrew], [Ruby][ruby], NodeJS, and Python installed. 
 these posts, I am running [Windows 10][windows].
 
 Now, it is possible to [install Jekyll in Windows][install], and I tried that previously, but I was never happy with the
-results. Fortunately, [Docker][docker] recently released the [Docker for WIndows][dockerforwindows].
+results. Fortunately, [Docker][docker] recently released the [Docker for Windows][dockerforwindows].
 
 After installing Docker, I tried running the quick tutorial, and ran into a problem.
 
-    $ docker pull nginx
     Using default tag: latest
     Pulling repository docker.io/library/nginx
     Network timed out while trying to connect to https://index.docker.io/v1/repositories/library/nginx/images. You may want to check your internet connection or if you are behind a proxy.
 
-I found a [Docker Forum post][forum] post where others were having the same issue. The solution for me was to open a Windows PowerShell
+I found a [Docker Forum post][forum] where others were having the same issue. The solution for me was to open a Windows PowerShell
 as Administrator, and [recreate the NAT object][solution].
 
-Jekyll has provided an official [Docker image][image], making this all a lot easier. They even have a section in thier [wiki][wiki]
+Jekyll has provided an official [Docker image][image], making this all a lot easier. They even have a section in their [wiki][wiki]
 on how to use it:
 
     docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll
@@ -38,8 +37,8 @@ Hmm, when I do this, I get an error:
     jekyll 3.1.6 | Error:  Permission denied @ dir_s_mkdir - /srv/jekyll/_site
 
 After a little searching, I found the solution. It turns out, because Docker is running inside a VM inside HyperV, in order to create
-Volumes that Docker containers can access, we need to share the local drives with the VM. Microsoft has provided a handly
-[blog post][post] explaining how to do so.
+Volumes that Docker containers can access, we need to share the local drives with the VM. Microsoft has provided a
+handy [blog post][post] explaining how to do so.
 
 After making this change, Docker was able to run Jekyll successfully, and I could browse my posts locally. But, as I saved changes,
 I was not able to see the updates. Ah yes, the [Caveats][caveats] section at the end of the Jekyll wiki, I need to add the --force_polling
