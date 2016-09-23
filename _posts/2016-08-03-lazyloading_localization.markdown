@@ -117,15 +117,16 @@ And add the following ready function inside the script section:
       }.bind(this));
     }
 
+Update: The bug documented here has been fixed in version 0.10.0, but I leave this paragraph here so I can brag
+about my pull request:
+
 Reload the page, and click 'fr'. Hmm, that's weird, we got an error!
 
     app-localize-behavior.html:213 Uncaught TypeError: Cannot read property 'hello' of undefined
 
 Turns out, there is what I consider to be a bug in the behavior. Great! A chance to submit a
 [pull request][pullrequest], and give back! Until that is accepted, we can continue using my
-[fork][fork]:
-
-    bower install --save https://github.com/oanda/app-localize-behavior.git#1cadd14a7e3d1c7a3cb2a177018cde94a886a5b3
+[fork][redacted].
 
 Now, reload the app, and click on 'fr'. The text disappears. That's because we haven't loaded fr.json yet.
 
@@ -200,4 +201,4 @@ Here is the final version of example-app.html:
 [cli]: https://www.polymer-project.org/1.0/tools/polymer-cli
 [localhost]: http://localhost:8080
 [pullrequest]: https://github.com/PolymerElements/app-localize-behavior/pull/42
-[fork]: https://github.com/oanda/app-localize-behavior
+[redacted]: http://redacted
