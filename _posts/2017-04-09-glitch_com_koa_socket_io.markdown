@@ -4,12 +4,12 @@ title: Glitch.com, KOA, Socket.io
 comments: true
 ---
 
-Recently, [Fog Creek Software][fogcreek] thier beta version of [Glitch.com][glitch].
+Recently, [Fog Creek Software][fogcreek] announced thier beta version of [Glitch.com][glitch].
 I was experimenting with a simple [socket.io][socket.io] based [nodejs][nodejs] server
 to use as a signaling backend for some [Web RTC stuff][rtc]. I needed
 a place to host it, and this seemed like a good chance to try out Glitch.
 
-I went to the web site, clicked "Sign in", and linked my Guthub account. After looking 
+I went to the web site, clicked "Sign in", and linked my Github account. After looking 
 around for a bit, I clicked "Edit Code", and it started a fresh project for me. There are
 a lot of sample and starter apps, you'll figure it out pretty qucik.
 
@@ -17,10 +17,10 @@ My two favorite features are the auto restart of the server, and the auto reload
 Although, the autosave can be a little disconcerting at first. The server crashes a lot
 when you are in the middle of typing some code. 
 
-The code that they gice you to start with uses [Express][express], but, if you know me,
+The code that they give you to start with uses [Express][express], but, if you know me,
 you know I never seem to do things the easy way. I wanted to try [Koa][koa]. So, in the 
 Glitch editor, I clicked the "Logs" button, and opened the console. Then, I clicked the 
-package.json file, and replaced expres with koa in the dependecies section:
+package.json file, and replaced express with koa in the dependecies section:
 
      "dependencies": {
        "koa": "^2.2.0"
