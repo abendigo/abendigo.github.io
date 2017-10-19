@@ -20,3 +20,5 @@ markdown: kramdown
 
 # Google sevices
 google_analytics: UA-80717907-1
+
+include: [".well-known"]
