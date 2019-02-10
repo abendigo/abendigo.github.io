@@ -76,9 +76,18 @@ no one other than myself will ever see them.
 I returned to Internal Test, clicked `review`, and was finally presented 
 with `START ROLLOUT TO INTERNAL TEST`.
 
-And then I waited...
+And then I waited... I checked back in an hour or so, and the Opt-in URL
+was available! I loaded the URL, joined the test program, and clicked 
+`download it on Google Play`. 
 
-This post is getting longer then I originally anticipated, so I will continue in part 2.
+Sweet! It's a Google Play store page! I clicked `install`, choose my 
+device, and installed the app! I grabbed my phone, and a minute or so 
+later, the icon appeared on my home screen! I clciked it, and the app 
+launched!
+
+Sorry for all the exclamation marks, but this is pretty exciting for me!
+We published a PWA, in the Play Store! Of course, it's not our PWA, but
+we will take care of that in Part 2!
 
 [pwa-play-store]: https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc
 [svgomg-twa]: https://github.com/GoogleChromeLabs/svgomg-twa/
