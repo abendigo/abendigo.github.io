@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PWAs and the Google Play Store
+title: PWAs and the Google Play Store (part 1)
 comments: true
 ---
 
@@ -59,7 +59,7 @@ Oh no, an error:
 I greped the source files, and made a change in `app/build.gradle`. I changed `org.chromium` to
 `blog.frustrated`, and tried again.
 
-Quick side note, I recently registered the domain name [frustrated.blog][frustraded.blog]. I hope to move
+Quick side note, I recently registered the domain name [frustrated.blog][frustrated.blog]. I hope to move
 this all there soon!
 
 I rebuilt the bundle, uploaded it, and it was accepted! I updated the release notes, and was able to save.
@@ -69,8 +69,16 @@ I added myself to the list of users, and was finally able to click `Review`.
 The Rollout option didn't show up. After a little searching, I realized I needed to fill out the `Store listing`,
 `Content Rating` and `Pricing & distribution` sections.
 
---- to be continued ---
+All in all, I needed to find 4 images (2 screenshots, 1 icon, and one 
+feature graphic). I just grabed them from Google, as
+no one other than myself will ever see them.
 
+I returned to Internal Test, clicked `review`, and was finally presented 
+with `START ROLLOUT TO INTERNAL TEST`.
+
+And then I waited...
+
+This post is getting longer then I originally anticipated, so I will continue in part 2.
 
 [pwa-play-store]: https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc
 [svgomg-twa]: https://github.com/GoogleChromeLabs/svgomg-twa/
