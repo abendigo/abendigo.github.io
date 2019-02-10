@@ -63,7 +63,7 @@ Quick side note, I recently registered the domain name [frustrated.blog][frustra
 this all there soon!
 
 I rebuilt the bundle, uploaded it, and it was accepted! I updated the release notes, and was able to save.
-I clicked `Review`, and got a warner that I had not configured any users to be able to access it.
+I clicked `Review`, and got a warning that I had not configured any users to be able to access it.
 I added myself to the list of users, and was finally able to click `Review`.
 
 The Rollout option didn't show up. After a little searching, I realized I needed to fill out the `Store listing`,
