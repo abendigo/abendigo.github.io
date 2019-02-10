@@ -12,7 +12,7 @@ all the steps, pains, etc.
 To keep things simple, I decided to start with the demo app mentioned in the article, 
 [Google Chrome Labs' svgomg-twa][svgomg-twa].
 
-First, I needed [Android Studio][studio]. After downloading and installing it, I `git clone` the 
+First, I needed [Android Studio][studio]. After downloading and installing it, I used `git clone` to download the 
 svgomg-twa repo. Then, I imported it into Android Studio, and built it. This took a little time, as
 gradle, and some other API's needed to be downloaded.
 
@@ -34,6 +34,10 @@ And finally, I was able to run the app! Sweet!
 
 Ugh. That was painful. I remember now why I gave up Android and Java development in favour of the web!
 Of course, if you do Android development regularly, you will have already resolved these issues.
+If you follow my blog, you know I use docker to help write these posts.
+Unfortunatey, HAXM and HyperV don't work together, which caused extra
+headaches. I recently saw an
+article on running Android VM's with HyperV, which I'll explore later.
 
 Now, to publish this thing! First, I needed to create a 
 [Play Store developer publisher account][playstore-account]. $25 later, that was done.
