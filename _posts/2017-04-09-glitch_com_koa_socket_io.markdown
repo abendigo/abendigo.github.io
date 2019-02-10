@@ -29,8 +29,8 @@ package.json file, and replaced express with koa in the dependecies section:
 In the console section, I saw some errors as I typed, but once I finished editing the file,
 I saw the packages get installed. Sweet!
 
-I added [koa-static][static], middleware to server static assets, and
-socket.io while I was here, ending up with: 
+I added [koa-static][static], middleware to serve static assets, and
+socket.io while I was there, ending up with: 
 
     "dependencies": {
       "koa": "^2.2.0",
