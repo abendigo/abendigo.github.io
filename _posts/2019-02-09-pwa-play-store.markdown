@@ -63,9 +63,6 @@ Oh no, an error:
 I grepped the source files, and made a change in `app/build.gradle`. I changed `org.chromium` to
 `blog.frustrated`, and tried again.
 
-Quick side note, I recently registered the domain name [frustrated.blog][frustrated.blog]. I hope to move
-this all there soon!
-
 I rebuilt the bundle, uploaded it, and it was accepted! I updated the release notes, and was able to save.
 I clicked `Review`, and got a warning that I had not configured any users to be able to access it.
 I added myself to the list of users, and was finally able to click `Review`.
@@ -98,7 +95,3 @@ we will take care of that in Part 2!
 [studio]: https://developer.android.com/studio/
 [stackoverflow]: https://stackoverflow.com/questions/29136173/emulator-error-x86-emulation-currently-requires-hardware-acceleration
 [playstore-account]: https://developer.android.com/distribute/console/
-[frustrated.blog]: https://frustrated.blog
-
-[polymer-project]: https://www.polymer-project.org/
-[starter-kit]: https://pwa-starter-kit.polymer-project.org/
