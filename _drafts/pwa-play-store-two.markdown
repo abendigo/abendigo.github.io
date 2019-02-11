@@ -15,6 +15,8 @@ I also needed a place to deploy it. The starter kit docs had a page titled
 Firebase Hosting, and Netlify. As I had never used Netlify before, I decided to 
 try it.
 
+First, I forked the [PWA Starter Kit repo][starter-kit-repo]. Next, I signed up 
+
 
 
 [play-store-part-one]: /2019/02/09/pwa-play-store.html
@@ -23,3 +25,4 @@ try it.
 [pwa-starter-kit]: https://pwa-starter-kit.polymer-project.org/
 [build-deploy]: https://pwa-starter-kit.polymer-project.org/building-and-deploying
 [static-hosting]: https://pwa-starter-kit.polymer-project.org/building-and-deploying#static-hosting
+[pwa-starter-repo]: https://github.com/Polymer/pwa-starter-kit
