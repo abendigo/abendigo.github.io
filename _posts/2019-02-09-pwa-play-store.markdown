@@ -4,9 +4,9 @@ title: PWAs and the Google Play Store (part 1)
 comments: true
 ---
 
-Recently, I read an article, [Google Play Store now open for Progressive Web Apps][pwa-play-store]. This got me
-very excited, as the number one argument I hear against Web Apps, is "People look for apps in the App Store".
-I decided to see how easy it is. I am writing this entry as I go through the steps, so hopefully I'll capture
+Recently, I read an article called [Google Play Store now open for Progressive Web Apps][pwa-play-store]. This got me
+very excited, as the number one argument I hear against Web Apps is "People look for apps in the App Store".
+I decided to see how easy it is. I am writing this entry as I go through the exercise, so hopefully I'll capture
 all the steps, pains, etc.
 
 To keep things simple, I decided to start with the demo app mentioned in the article, 
@@ -60,7 +60,7 @@ Oh no, an error:
     Upload failed
     You need to use a different package name because "org.chromium" is restricted.
 
-I greped the source files, and made a change in `app/build.gradle`. I changed `org.chromium` to
+I grepped the source files, and made a change in `app/build.gradle`. I changed `org.chromium` to
 `blog.frustrated`, and tried again.
 
 Quick side note, I recently registered the domain name [frustrated.blog][frustrated.blog]. I hope to move
