@@ -16,7 +16,8 @@ Firebase Hosting, and Netlify. As I had never used Netlify before, I decided to
 try it.
 
 First, I forked the [PWA Starter Kit repo][starter-kit-repo]. Next, I signed up 
-
+for [Netlify][netlify], and followed the [instructions][instructions].
+Now we have a PWA deployed here: [elastic-khorana-7862f5.netlify.com][elastic-khorana]
 
 
 [play-store-part-one]: /2019/02/09/pwa-play-store.html
@@ -26,3 +27,6 @@ First, I forked the [PWA Starter Kit repo][starter-kit-repo]. Next, I signed up
 [build-deploy]: https://pwa-starter-kit.polymer-project.org/building-and-deploying
 [static-hosting]: https://pwa-starter-kit.polymer-project.org/building-and-deploying#static-hosting
 [pwa-starter-repo]: https://github.com/Polymer/pwa-starter-kit
+[netlify]: https://app.netlify.com/signup
+[instructions]: https://pwa-starter-kit.polymer-project.org/building-and-deploying#netlify
+[elastic-khorana]: https://elastic-khorana-7862f5.netlify.com
