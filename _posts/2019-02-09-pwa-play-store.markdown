@@ -88,10 +88,11 @@ launched!
 
 Sorry for all the exclamation marks, but this is pretty exciting for me!
 We published a PWA, in the Play Store! Of course, it's not our PWA, but
-we will take care of that in Part 2!
+we will take care of that in [Part 2!][part-two]
 
 [pwa-play-store]: https://medium.com/@firt/google-play-store-now-open-for-progressive-web-apps-ec6f3c6ff3cc
 [svgomg-twa]: https://github.com/GoogleChromeLabs/svgomg-twa/
 [studio]: https://developer.android.com/studio/
 [stackoverflow]: https://stackoverflow.com/questions/29136173/emulator-error-x86-emulation-currently-requires-hardware-acceleration
 [playstore-account]: https://developer.android.com/distribute/console/
+[part-two]: /2019/02/13/pwa-play-store-two.html
