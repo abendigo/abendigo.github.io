@@ -11,7 +11,7 @@ take a different PWA, and release it.
 I chose the [Polymer Project][polymer-project] [PWA Starter Kit][pwa-starter-kit].
 I also needed a place to deploy it. The starter kit docs had a page titled
 [Building and deploying][build-deploy], and a section for 
-[static hosting][static-hosting]. It listed 3 opotions, App Engine, 
+[static hosting][static-hosting]. It listed 3 options, App Engine, 
 Firebase Hosting, and Netlify. As I had never used Netlify before, I decided to 
 try it.
 
@@ -76,7 +76,7 @@ Next, I plan to build a real PWA, and release it. Stay tuned!
 [pwa-starter-kit]: https://pwa-starter-kit.polymer-project.org/
 [build-deploy]: https://pwa-starter-kit.polymer-project.org/building-and-deploying
 [static-hosting]: https://pwa-starter-kit.polymer-project.org/building-and-deploying#static-hosting
-[pwa-starter-repo]: https://github.com/Polymer/pwa-starter-kit
+[starter-kit-repo]: https://github.com/Polymer/pwa-starter-kit
 [netlify]: https://app.netlify.com/signup
 [instructions]: https://pwa-starter-kit.polymer-project.org/building-and-deploying#netlify
 [elastic-khorana]: https://elastic-khorana-7862f5.netlify.com
