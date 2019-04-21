@@ -1,4 +1,4 @@
-This is a Brave Payments publisher verification file.
+This is a Brave Rewards publisher verification file.
 
-Domain: abendigo.github.io
-Token: 7fcf4550c230fd13421e9570af9f408c14e05e7ab6a8647228b6a324c7ac6a56
+Domain: frustrated.blog 
+Token: 38cd34d0f909246ec605853b1bc11047752a019053e0cac5c6bb76a73c611dca
