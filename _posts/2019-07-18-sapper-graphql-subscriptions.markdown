@@ -37,7 +37,7 @@ bundling, but you can also use [Webpack][webpack].
     npm install
     npm run dev
 
-Next, I added the `express-graphql`, '`graphql`, and 
+Next, I added the `express-graphql`, `graphql`, and 
 `graphql-tools` modules as a dev dependencies, so they
 will get bundled at build time.
 
