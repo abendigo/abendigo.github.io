@@ -8,7 +8,7 @@ I recently started a new hobby project, and so I decided to take a quick
 look at the technologies that were available.
 
 [Svelte 3.0][svelte] was recently [released][released], and it looks pretty
-interesting. It has support for Server Side Rendering (for the SEO magic)
+interesting. It has support for Server Side Rendering (for that SEO magic)
 via a package called [Sapper][sapper].
 
 I've been wanting to explore [GraphQL][graphql], and this seemed like a 
@@ -16,14 +16,16 @@ good opportunity. Real time updates are important for this project, so
 I wanted to try GraphQL subscriptions.
 
 Great, technologies decided. Lets just google for a tutorial, or sample 
-app, and get started. And I ran into my first roadblock. I found a
+app, and get started! 
+
+And I ran into my first roadblock. I found a
 [tweet][tweet] from [Rich Harris][rich], the mastermind behind Svelte 
 and Sapper, mentioning [express-graphql][express-graphql].
-I found a [blog post][blog] from [Hasura][hasura] mentioning 
+I also found a [blog post][blog] from [Hasura][hasura] mentioning 
 [svelte-apollo][svelte-apollo]. But nothing doing the exact combo that I
 am looking for. 
 
-Ok, lets get started. The final code will be available on 
+Ok, doing things the hard way. Lets get started. The final code will be available on 
 [github here][github].
 
 First, I followed the instructions on the [Sapper][sapper] website
