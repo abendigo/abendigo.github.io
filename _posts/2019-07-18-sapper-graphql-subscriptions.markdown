@@ -46,7 +46,7 @@ will get bundled at build time.
 Restarting the development server, I saw some build errors. I fixed these
 by moving all three in to the `dependencies`
 section of `package.json`. For Sapper, this means that they will be
-imported at run time, not build time. I am tryng to find the documentation
+imported at run time, not build time. I am trying to find the documentation
 that explains this, and will update with a link here when I find it.
 
 Now, adding GraphQL support was as easy as adding a `graphql.js` file
@@ -88,7 +88,7 @@ You should see a response like:
       }
     }
 
-Next step, consuming this data. I decied to work on the `About` page.
+Next step, consuming this data. I decided to work on the `About` page.
 First, I modified `about.svelte`, adding this to the top:
 
     <script>
@@ -209,7 +209,7 @@ Finally, I defined a subscription in `_schema.js`:
       }
     }
 
-Quick note. A subscription server side is implemented as an `AsyncIterator`.
+Quick note. On the server side, a subscription is implemented as an `AsyncIterator`.
 I made a quick async generator function that sleeps for 1 second after
 returning a random number.
 
