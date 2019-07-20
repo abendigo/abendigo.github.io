@@ -188,7 +188,7 @@ But, we are missing one thing, the `schema`. I extracted it from
 
     export const schema = makeExecutableSchema({typeDefs, resolvers});
 
-and imported it into `server.js':
+and imported it into `server.js`:
 
     import { schema } from './_schema';
 
