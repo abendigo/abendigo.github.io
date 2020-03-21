@@ -8,13 +8,13 @@ A friend of mine has a side project, currently deployed on AWS, using
 [nginx][nginx] for static assets, and [PHP][php] for for the backend.
 The backend connects to [Redis][redis] and [MySQL][mysql]. This is all
 working fine, but he's had to set it up a couple times, and each time he
-forgets some setting, and scratched his head for a while until he
+forgets some setting, and scratches his head for a while until he
 remebers what was missed.
 
 As well, he has been talking about migrating away from AWS to a dedicated server.
 
 I've been talking up [Docker][docker], and
-[Infrastructure As Code][iac]/[DevOps][devops] to him, so he asked me to show him.
+[DevOps][devops]/[Infrastructure As Code][iac] to him, so he asked me to show him.
 This is what I came up with.
 
 In addition to what I mentioned above, I'll be using [Docker Compose][docker-compose]
@@ -56,7 +56,7 @@ If you refresh the [dashboad][dashboard], you should see an entry for
 `web.docker.localhost`. If you visit [http://web.docker.localhost][webdocker],
 you should see the nginx welcome page.
 
-Then I created a local directory, called `nginx`. Inside it, i created anther directory,
+Then I created a local directory, called `nginx`. Inside it, I created anther directory,
 `public`, and a file called `site.conf`:
 
     server {
@@ -67,7 +67,7 @@ Then I created a local directory, called `nginx`. Inside it, i created anther di
       root /public;
     }
 
-Inside `public`, i created `index.html`:
+Inside `public`, I created `index.html`:
 
     Hello Frustrated.Blog
 
@@ -267,7 +267,8 @@ And copied `redis.php` to `all.php`, and added the following:
       }
     }
 
-Restart everything, and load [all.php][allphp]. And, thereis an error.
+Restart everything, and load [all.php][allphp]. And, there is an error.
+
 After a lot of searching, I finally found a solution. MySQL in Docker will run
 initialization scripts if ot starts and there are not databases.
 
@@ -280,7 +281,7 @@ So, I created a `mysql` directory, and inside created a
 
 and modified `docker-compose.yml`:
 
-Note: YOu will need to remove the mysql container before restarting, to
+Note: You will need to remove the mysql container before restarting, to
 force the config scripts to run.
 
 Load [all.php][allphp], and you should see:
@@ -298,10 +299,10 @@ getting to this point!
 [redis]: https://redis.io/
 [mysql]: https://www.mysql.com/
 [docker]: https://www.docker.com/
-[iac]: ...
-[devops]: ...
+[iac]: https://en.wikipedia.org/wiki/Infrastructure_as_code
+[devops]: https://www.atlassian.com/devops
 [docker-compose]: ...
-[traefik]: ...
+[traefik]: https://docs.traefik.io/
 [github]: https://github.com/abendigo/nginx-php-redis-mysql
 [dashboard]: http://localhost:8080
 [webdocker]: http://web.docker.localhost
