@@ -114,10 +114,10 @@ Restart everything, and load [web.docker.localhost][webdocker]. You should
 see the PNP info page.
 
 Time for Redis! Now, this requires installing a plugin to the PHP container.
-My firend used [compose][compose] to install [predis][predis], so I needed
+My friend used [compose][compose] to install [predis][predis], so I needed
 to do the same. After a lot of searching, I came up with this solution.
 
-I created a `php` direcotry. Inside, I created `composer.json` which will
+I created a `php` directory. Inside, I created `composer.json` which will
 be used to install predis:
 
     {
@@ -270,7 +270,7 @@ And copied `redis.php` to `all.php`, and added the following:
 Restart everything, and load [all.php][allphp]. And, there is an error.
 
 After a lot of searching, I finally found a solution. MySQL in Docker will run
-initialization scripts if ot starts and there are not databases.
+initialization scripts if it starts and there are no databases.
 
 So, I created a `mysql` directory, and inside created a
 `docker-entrypoint-initdb.d` directory. In there, I created `script.sql`:
