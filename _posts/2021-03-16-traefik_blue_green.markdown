@@ -89,7 +89,7 @@ Add the following:
 Then start them, `docker-compose up -d`. If you run `docker ps` or `docker-compose ps`
 you should now see 3 containers running.
 
-We need to tell Traefik about these services, so in the `dynaic` directory, we are going to add 4 files,
+We need to tell Traefik about these services, so in the `dynamic` directory, we are going to add 4 files,
 `http.services.blue.yml`:
 
     http:
