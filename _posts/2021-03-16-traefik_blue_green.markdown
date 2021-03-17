@@ -8,11 +8,11 @@ I have been using [Traefik][traefik] with [Docker][docker] for a while
 to host some personal projects, and to experiment with [devops][devops].
 
 One thing I have always wanted to try is [Blue-Green Deployments][blue-green-deployments],
-but I didn't want all the extra overhead if setting up [Swarm][swarm] or [Kubernetes][kubernetes].
+but I didn't want all the extra overhead of setting up [Swarm][swarm] or [Kubernetes][kubernetes].
 
 Heres how I recently acomplished this goal.
 
-First. I created a [traefik.yml][traefik.yml] file for static configuration:
+First, create a [traefik.yml][traefik.yml] file for static configuration:
 
     entryPoints:
       http:
@@ -29,9 +29,9 @@ First. I created a [traefik.yml][traefik.yml] file for static configuration:
       dashboard: true
       insecure: true
 
-Then I created a directory, `dynamic` for the dynamic configurations. There is nothing in it yet.
+Then create a directory, `dynamic` for the dynamic configurations. There is nothing in it yet.
 
-Next I created a [docker-compose.yml][docker-compose.yml] file to spin up Traefik and hook up
+Next create a [docker-compose.yml][docker-compose.yml] file to spin up Traefik and hook up
 some volumes:
 
     services:
@@ -48,7 +48,7 @@ some volumes:
 Start it up, `docker-compose up -d`, and vist [http://localhost:8080][localhost]
 If everything worked, you should see the Traefik dashboard!
 
-Now we need our `blue` and `green` services.  I created two simple html files, `blue.html`
+Now we need our `blue` and `green` services.  Created two simple html files, `blue.html`
 
     <h2>Blue<h2>
 
@@ -56,7 +56,7 @@ and `green.html`
 
     <h2>Green<h2>
 
-Then, I created two simple [Dockerfiles][dockerfile], `Dockerfile.blue`
+Then, create two simple [Dockerfiles][dockerfile], `Dockerfile.blue`
 
     FROM nginx
     COPY blue.html /usr/share/nginx/html/index.html
@@ -66,7 +66,7 @@ and `Dockerfile.green`
     FROM nginx
     COPY green.html /usr/share/nginx/html/index.html
 
-I built and labeled the images:
+Build and labele the images:
 
     docker build -t blue -f Dockerfile.blue .
     docker build -t green -f Dockerfile.green .
