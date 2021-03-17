@@ -7,11 +7,11 @@ comments: true
 I have been using [Traefik][traefik] with [Docker][docker] for a while
 to host some personal projects, and to experiment with [devops][devops].
 
-One thing I have always wanted to accomplish is full [Continuos Deployment][cd],
+One thing I have always wanted to accomplish is full [Continuous Deployment][cd],
 with zero downtime, using [Blue-Green Deployments][blue-green-deployments],
 but I didn't want all the extra overhead of setting up [Swarm][swarm] or [Kubernetes][kubernetes].
 
-Heres how I recently acomplished this goal.
+Here's how I recently accomplished this goal.
 
 First, create a [traefik.yml][traefik.yml] file for static configuration:
 
@@ -46,14 +46,14 @@ some volumes:
           - ./traefik.yml:/etc/traefik/traefik.yml
           - ./dynamic:/etc/traefik/dynamic:ro
 
-Start it up, `docker-compose up -d`, and vist [http://localhost:8080][localhost]
+Start it up, `docker-compose up -d`, and vist [http://localhost:8080][localhost].
 If everything worked, you should see the Traefik dashboard!
 
 Now we need our `blue` and `green` services.  Created two simple html files, `blue.html`
 
     <h2>Blue<h2>
 
-and `green.html`
+and `green.html`.
 
     <h2>Green<h2>
 
@@ -62,17 +62,17 @@ Then, create two simple [Dockerfiles][dockerfile], `Dockerfile.blue`
     FROM nginx
     COPY blue.html /usr/share/nginx/html/index.html
 
-and `Dockerfile.green`
+and `Dockerfile.green`.
 
     FROM nginx
     COPY green.html /usr/share/nginx/html/index.html
 
-Build and labele the images:
+Build and label the images:
 
     docker build -t blue -f Dockerfile.blue .
     docker build -t green -f Dockerfile.green .
 
-Lets test them out:
+Let's test them out:
 
     docker run -p 8081:80 --rm blue
     docker run -p 8082:80 --rm green
@@ -126,7 +126,7 @@ We need to tell Traefik about these services, so in the `dynamic` directory, we 
           service: blue@file
 
 Load the [Traefik Dashboard][dashboard], and you should see the routes and services defined.
-Vist [blue.docker-localhost][blue.docker.localhost] and [green.docker.localhost][green.docker.localhost]
+Vist [blue.docker-localhost][blue.docker.localhost] and [green.docker.localhost][green.docker.localhost].
 
 Almost there! Just one final step. Add the following file
 `http.routers.docker-localhost.yml`:
