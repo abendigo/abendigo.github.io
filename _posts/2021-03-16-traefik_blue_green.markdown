@@ -126,7 +126,7 @@ We need to tell Traefik about these services, so in the `dynamic` directory, we 
           service: blue@file
 
 Load the [Traefik Dashboard][dashboard], and you should see the routes and services defined.
-Vist [blue.docker-localhost][blue.docker.localhost] and [green.docker.localhost][green.docker.localhost].
+Visit [blue.docker-localhost][blue.docker.localhost] and [green.docker.localhost][green.docker.localhost].
 
 Almost there! Just one final step. Add the following file
 `http.routers.docker-localhost.yml`:
@@ -137,12 +137,12 @@ Almost there! Just one final step. Add the following file
           rule: Host(`docker.localhost`)
           service: blue@file
 
-See that last line? Thats where you decide which service, `blue` or `green`, maps to
+See that last line? That's where you decide which service, `blue` or `green`, maps to
 [http://docker.localhost][docker.localhost].
 When you want to change it, just change this one value. Traefik watches for changes in this directory, and updates
-almost immediatly.
+almost immediately.
 
-In a followup post, I will build a simple app that shows you which service is selected, and lets you change it.
+In a follow-up post, I will build a simple app that shows you which service is selected, and lets you change it.
 
 [traefik]: https://traefik.io/traefik/
 [docker]: https://www.docker.com/products/docker-desktop
