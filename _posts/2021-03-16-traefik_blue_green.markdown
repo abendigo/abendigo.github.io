@@ -49,7 +49,7 @@ some volumes:
 Start it up, `docker-compose up -d`, and vist [http://localhost:8080][localhost].
 If everything worked, you should see the Traefik dashboard!
 
-Now we need our `blue` and `green` services.  Created two simple html files, `blue.html`
+Now we need our `blue` and `green` services. Create two simple html files, `blue.html`
 
     <h2>Blue<h2>
 
