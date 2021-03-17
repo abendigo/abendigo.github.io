@@ -7,7 +7,8 @@ comments: true
 I have been using [Traefik][traefik] with [Docker][docker] for a while
 to host some personal projects, and to experiment with [devops][devops].
 
-One thing I have always wanted to try is [Blue-Green Deployments][blue-green-deployments],
+One thing I have always wanted to accomplish is full [Continuos Deployment][cd],
+with zero downtime, using [Blue-Green Deployments][blue-green-deployments],
 but I didn't want all the extra overhead of setting up [Swarm][swarm] or [Kubernetes][kubernetes].
 
 Heres how I recently acomplished this goal.
@@ -146,6 +147,7 @@ In a followup post, I will build a simple app that shows you which service is se
 [traefik]: https://traefik.io/traefik/
 [docker]: https://www.docker.com/products/docker-desktop
 [devops]: https://en.wikipedia.org/wiki/DevOps
+[cd]: https://en.wikipedia.org/wiki/Continuous_deployment
 [blue-green-deployments]: https://martinfowler.com/bliki/BlueGreenDeployment.html
 [swarm]: https://docs.docker.com/engine/swarm/
 [kubernetes]: https://kubernetes.io/
