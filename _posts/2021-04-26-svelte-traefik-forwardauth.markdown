@@ -5,7 +5,7 @@ comments: true
 ---
 
 In my [previous post][blue_green], I said I would build a simple app that shows you which service was selected.
-While working on it, I wanted to hide it behid a login screen. Rather than build an entire login process, I
+While working on it, I wanted to hide it behind a login screen. Rather than build an entire login process, I
 decided to leverage the options [Traefik][traefik] provided me and start with [BasicAuth][basicauth]. In this
 example, `whoami` is substituting for the blue-green status app.
 
@@ -128,7 +128,7 @@ method to look for a session id cookie, and retrieve or create the context. We w
       return { ...response, headers };
     }
 
-Now, in a real site, we would need to worry about expireing the session, generating a
+Now, in a real site, we would need to worry about expiring the session, generating a
 more secure session id, checking ip addresses, etc, but this will do for now.
 
 Ok, lets add a Login page. Here is one that I copied from [CodeShack][codeshack].
@@ -205,7 +205,7 @@ The form will `POST` to `/login` when you press enter, so:
       }
     }
 
-Upon succesful login, we set the `authenticated` boolean in the context. Lets update the `auth`
+Upon successful login, we set the `authenticated` boolean in the context. Lets update the `auth`
 endpoint to check that. If it's not set, redirect the user to the login page.
 
 `/src/routes/auth.js`:
